@@ -1,4 +1,4 @@
-Câu A1 — HTTP & Browser (chương 01 - 01_introduction_html_universe.md)
+Câu A1 (5đ) — HTTP & Browser (chương 01 - 01_introduction_html_universe.md)
 1. Khi gõ https://shopee.vn vào trình duyệt và nhấn Enter, 5 bước xảy ra là:
 - B1: Gửi Request qua hạ tầng mạng (DNS Lookup). D/c
 - B2: Server tiếp nhận và xử lý.
@@ -19,7 +19,15 @@ Câu A2 — Semantic HTML
 4. <div class="product"> -> <article>
 
 Câu A3 — Block vs Inline
-
+** Text Art: 
+ Hộp 1                                             
+ Text AText B                                      
+ Hộp 2                                             
+ Text CText D                                      
+ Hộp 3
+** Giải thích:
++<div>Hộp 1</div>,<div>Hộp 2</div>,<div>Hộp 1</div>: Là 1 block, chiếm riêng 1 dòng
++<span>Text A</span> <span>Text B</span>, <span>Text C</span> <strong>Text D</strong>: là inline, nằm cạnh nhau 
 
 Câu A4 — Table
 ** Sự khác nhau giữa <thead>, <tbody>, <tfoot>:
@@ -27,6 +35,6 @@ Câu A4 — Table
 - <tbody> (Table Body): chứa nội dung dữ liệu chính của bảng
 - <tfoot> (Table Footer): chứa thông tin tổng kết hoặc chú thích cuối bảng
 ** KHÔNG NÊN dùng table để tạo layout trang web vì:
-1. Sai mục đích Semantic: nếu dùng để chia bố cục trang web (header, sidebar, footer), các công cụ tìm kiếm (Google) sẽ không hiểu được đâu là nội dung chính, dẫn đến SEO cực kỳ kém
+1. Sai mục đích Semantic: nếu dùng để chia bố cục trang web (header, sidebar, footer), các công cụ tìm kiếm sẽ không hiểu được đâu là nội dung chính, dẫn đến SEO cực kỳ kém
 2. Không linh hoạt: bảng có cấu trúc rất cứng nhắc. Khi xem trên điện thoại di động (màn hình nhỏ), một layout bằng table sẽ bị vỡ vụn hoặc bị tràn màn hình, rất khó để thu gọn hay sắp xếp lại
 3. Tốc độ tải trang chậm: trình duyệt thường phải đợi tải xong toàn bộ code của thẻ <table> thì mới bắt đầu tính toán để hiển thị ra màn hình. Nếu layout trang web phức tạp với nhiều bảng lồng nhau, người dùng sẽ thấy một trang trắng tinh trong thời gian dài trước khi nội dung hiện ra
