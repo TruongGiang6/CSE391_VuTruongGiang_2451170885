@@ -1,3 +1,4 @@
+PHẦN A:
 Câu A1 (5đ) — HTTP & Browser (chương 01 - 01_introduction_html_universe.md)
 1. Khi gõ https://shopee.vn vào trình duyệt và nhấn Enter, 5 bước xảy ra là:
 - B1: Gửi Request qua hạ tầng mạng (DNS Lookup). D/c
@@ -38,3 +39,17 @@ Câu A4 — Table
 1. Sai mục đích Semantic: nếu dùng để chia bố cục trang web (header, sidebar, footer), các công cụ tìm kiếm sẽ không hiểu được đâu là nội dung chính, dẫn đến SEO cực kỳ kém
 2. Không linh hoạt: bảng có cấu trúc rất cứng nhắc. Khi xem trên điện thoại di động (màn hình nhỏ), một layout bằng table sẽ bị vỡ vụn hoặc bị tràn màn hình, rất khó để thu gọn hay sắp xếp lại
 3. Tốc độ tải trang chậm: trình duyệt thường phải đợi tải xong toàn bộ code của thẻ <table> thì mới bắt đầu tính toán để hiển thị ra màn hình. Nếu layout trang web phức tạp với nhiều bảng lồng nhau, người dùng sẽ thấy một trang trắng tinh trong thời gian dài trước khi nội dung hiện ra
+
+PHẦN B:
+Câu B3 - Debug HTML
+- Lỗi 1: Dòng 1 - <!DOCTYPE> thiếu html - thêm html
+- Lỗi 2: Dòng 2 - html thiếu lang = "vi" - thêm lang = "vi"
+- Lỗi 3: Dòng 4 - Thẻ title chưa có đóng - Thêm thẻ đóng </title>
+- Lỗi 4: Dòng 5 - Giá trị charset sai - Sửa thành UTF-8
+- Lỗi 5: Dòng 8 - Thẻ đóng h1 sai - Sửa thành </h1>
+- Lỗi 6: Dòng 12 - Thẻ đóng a sai - Sửa thành </a>
+- Lỗi 7: Dòng 20 - Thẻ <img> thiếu dấu "" và thiếu alt — Sửa thành <img src="iphone.jpg" alt="Hình ảnh iPhone">
+- Lỗi 8: Dòng 22 - Sai vị trí thẻ đóng </b> - Thay vị trí thành <p>Giá: <b>25.990.000đ</b></p>
+- Lỗi 9: Dòng 40 - Thừa 1 thẻ <main></main> - Thay thành <aside></aside>
+- Lỗi 10: Dòng 45 - Thẻ p chưa đóng - Thêm </p>
+- Lỗi 11: Dưới dòng 47 - Thiếu thẻ đóng html - Thêm </html>
