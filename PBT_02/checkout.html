@@ -6,9 +6,22 @@
     <title>CHECK OUT</title>
 </head>
 <body>
+    <header>
+        <H1>TRANG ORDER</H1>
+    </header>
     <main>
+        <section aria-label="Tìm kiếm sản phẩm">
+            <label for="search">Tìm kiếm sản phẩm:</label>
+            <input type="text" id="search" name="search" list="searchList" placeholder="Nhập tên sản phẩm cần tìm" aria-label="Tìm kiếm sản phẩm">
+            <datalist id="searchList">
+                <option value="iPhone 17 Pro Max">
+                <option value="MacBook Air M3">
+                <option value="Laptop Gaming X">
+            </datalist>
+        </section>
+
         <section>
-            <h1>GIỎ HÀNG</h1>
+            <h2>GIỎ HÀNG</h2>
             <table border="1">
                 <thead>
                     <tr>
@@ -52,7 +65,7 @@
         </section>
 
         <section>
-            <h1>FORM THANH TOÁN</h1>
+            <h2>FORM THANH TOÁN</h2>
             <form action="#" method="POST"></form>
             <fieldset>
                 <legend>Phương thức thanh toán & Khuyến mãi</legend>
@@ -81,7 +94,7 @@
         </section>
     
         <section>
-            <h1>THÔNG TIN GIAO HÀNG</h1>
+            <h2>THÔNG TIN GIAO HÀNG</h2>
             <form action="#" method="POST"></form>
             <fieldset>
                 <legend>Thông tin người nhận</legend>
@@ -106,10 +119,11 @@
                 </div>
 
             </fieldset>
-        <div>
-            <button type="submit" aria-label="Xác nhận đặt hàng">Đặt hàng</button>
-        </div>
-        
+            
+            <div>
+                <button type="submit" aria-label="Xác nhận đặt hàng">Đặt hàng</button>
+            </div>
+
         </section>
 
 
