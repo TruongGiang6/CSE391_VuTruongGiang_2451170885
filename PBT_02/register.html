@@ -31,7 +31,7 @@
             <legend>TÀI KHOẢN</legend>
             <div>
                 <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required pattern="[A-Za-z0-9_]{3,20}">
+                <input type="text" id="username" name="username" required pattern="[A-Za-z0-9_]{3,20}" placeholder="Nhap username">
             </div>
             <div>
                 <label for="password">Mật khẩu:</label>
@@ -66,7 +66,7 @@
                 <textarea id="address" name="address" rows="3" placeholder="Nhập địa chỉ chi tiết"></textarea>
             </div>
             <div>
-                <label for="gioitinh">Giới tính</label>
+                <label for="gioitinh">Giới tính:</label>
                 <input type="radio" id="male" name="gender" value="NAM">
                 <label for="male">Nam</label>
 
@@ -77,6 +77,16 @@
                 <label for="other">Khác</label>
             </div>
         </fieldset>
+
+        <div>
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">Tôi đồng ý với các điều khoản và chính sách bảo mật</label>
+        </div>
+
+        <div>
+            <button type="submit">Gửi thông tin</button>
+            <button type="reset">Làm mới</button>
+        </div>
     </form>
 </body>
 </html>
