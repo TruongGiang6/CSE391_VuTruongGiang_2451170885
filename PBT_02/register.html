@@ -14,18 +14,33 @@
                     <input type="text" id="fullname" name="fullName" required minlength="2" maxlength="50" placeholder="Nhap ten">
                 </div>
                 <div>
-                    <label for="birthDate">Ngày sinh:</label>
-                    <input type="date" id="birthDate" name="birthDate">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Nhap email">
                 </div>
                 <div>
-                    <label for="gender">Giới tính:</label>
-                    <select id="gender" name="gender">
-                        <option value="male">Nam</option>
-                        <option value="female">Nữ</option>
-                        <option value="other">Khác</option>
-                    </select>
+                    <label for="phone">Số điện thoại:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Nhap so dien thoai">
                 </div>
+                <div>
+                    <label for="birthDate">Ngày sinh:</label>
+                    <input type="date" id="birthDate" name="birthDate" max = "2026-04-23" placeholder="Chon ngay sinh"> 
+                </div>
+        </fieldset>
 
+        <fieldset>
+            <legend>TÀI KHOẢN</legend>
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required pattern="[A-Za-z0-9_]{3,20}">
+            </div>
+            <div>
+                <label for="password">Mật khẩu:</label>
+                <input type="password" id="password" name="password" required minlength="8"  pattern="(?=.*[A-Z])(?=.*[0-9]).+" placeholder="Nhap mat khau">
+            </div>
+            <div>
+                <label for="confirmPassword">Xác nhận mật khẩu:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required minlength="6" maxlength="100" placeholder="Xac nhan mat khau">
+            </div>
         </fieldset>
     </form>
 </body>
