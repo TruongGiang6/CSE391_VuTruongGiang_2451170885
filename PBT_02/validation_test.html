@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Validation Test</title>
+</head>
+<body>
+  <h1>HTML Validation Cases</h1>
+
+  <form action="#" method="post">
+    <div>
+      <label for="case1">Case 1: required + empty value</label>
+      <input id="case1" type="text" required value="" />
+      <small>Expected: invalid (valueMissing)</small>
+    </div>
+
+    <div>
+      <label for="case2">Case 2: email with value "abc"</label>
+      <input id="case2" type="email" value="abc" />
+      <small>Expected: invalid (typeMismatch)</small>
+    </div>
+
+    <div>
+      <label for="case3">Case 3: number min=1 max=10 value=15</label>
+      <input id="case3" type="number" min="1" max="10" value="15" />
+      <small>Expected: invalid (rangeOverflow)</small>
+    </div>
+
+    <div>
+      <label for="case4">Case 4: pattern [0-9]{10} with value "abc123"</label>
+      <input id="case4" type="text" pattern="[0-9]{10}" value="abc123" />
+      <small>Expected: invalid (patternMismatch)</small>
+    </div>
+
+    <div>
+      <label for="case5">Case 5: password minlength=8 value=123</label>
+      <input id="case5" type="password" minlength="8" value="123" />
+      <small>Expected: invalid (tooShort)</small>
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
