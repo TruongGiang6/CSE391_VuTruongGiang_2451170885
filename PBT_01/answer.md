@@ -91,5 +91,92 @@ Câu B4 - Phân tích trang web thật (Shopee)
 
 PHẦN C:
 Câu C1:
-<!DOCUMENT html>
+<!DOCTYPE html>
 <html lang="vi">
+<head>
+    <meta charset="UTF-8"> <!-- charset để hiển thị tiếng Việt -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- responsive -->
+    <title>Product Detail</title> <!-- tiêu đề trang -->
+</head>
+<body>
+
+<header> <!-- header: phần đầu trang -->
+    <nav> <!-- nav: menu điều hướng -->
+        <ul> <!-- danh sách menu -->
+            <li><a href="#">Trang chủ</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main> <!-- main: nội dung chính -->
+    <nav aria-label="breadcrumb"> <!-- breadcrumb là điều hướng -->
+        <ol> <!-- có thứ tự -->
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Điện thoại</a></li>
+            <li>iPhone 16</li>
+        </ol>
+    </nav>
+    <section class="product"> <!-- section: khối sản phẩm -->
+        <section class="images"> <!-- nhóm ảnh -->
+            <figure> <!-- media chính -->
+                <img src="#" alt="">
+                <figcaption>Ảnh chính</figcaption>
+            </figure>
+            <div> <!-- layout ảnh nhỏ -->
+                <img src="#" alt="">
+                <img src="#" alt="">
+                <img src="#" alt="">
+                <img src="#" alt="">
+                <img src="#" alt="">
+            </div>
+        </section>
+        <section class="info"> <!-- thông tin sản phẩm -->
+            <h1>Tên sản phẩm</h1> <!-- tiêu đề chính -->
+            <p>Giá</p> <!-- giá -->
+            <div> <!-- rating -->
+                <span>★★★★★</span>
+            </div>
+            <article> <!-- mô tả độc lập -->
+                <p>Mô tả...</p>
+            </article>
+        </section>
+    </section>
+    <section class="thongso"> <!-- thông số -->
+        <h2>Thông số</h2>
+        <table> <!-- dữ liệu dạng bảng -->
+            <tr><th>Thuộc tính</th><th>Giá trị</th></tr>
+            <tr><td>...</td><td>...</td></tr>
+        </table>
+    </section>
+    <section class="danhgia"> <!-- đánh giá -->
+        <h2>Đánh giá</h2>
+        <article> <!-- 1 review -->
+            <header> <!-- info người dùng -->
+                <strong>User</strong>
+            </header>
+            <p>Comment...</p>
+        </article>
+    </section>
+    <aside> <!-- sidebar: nội dung phụ -->
+        <h2>Sản phẩm tương tự</h2>
+        <ul>
+            <li>
+                <article> <!-- mỗi sản phẩm -->
+                    <img src="#" alt="">
+                    <h3>Tên</h3>
+                </article>
+            </li>
+        </ul>
+    </aside>
+
+</main>
+
+<footer> <!-- footer: cuối trang -->
+    <p>Footer</p>
+</footer>
+
+</body>
+</html>
+
+Câu C2:
+- Quan điểm “dùng <div> cho mọi thứ rồi thêm class là đủ” nghe có vẻ tiện, nhưng thực tế lại gây nhiều hạn chế về kỹ thuật. Trước hết là vấn đề SEO: các công cụ tìm kiếm như Google không chỉ đọc nội dung mà còn phân tích cấu trúc HTML để hiểu đâu là phần quan trọng của trang. Khi sử dụng các thẻ semantic như <main>, <article>, <nav>, bạn đang cung cấp “ngữ cảnh” rõ ràng, giúp bot lập chỉ mục chính xác hơn. Nếu mọi thứ đều là <div>, trang web sẽ trở nên “mù nghĩa”, ảnh hưởng tiêu cực đến khả năng xếp hạng. Bên cạnh đó, semantic HTML đóng vai trò quan trọng trong Accessibility. Các công nghệ hỗ trợ như Screen Reader dựa vào cấu trúc semantic để giúp người dùng khiếm thị điều hướng nhanh giữa các khu vực như menu, nội dung chính hay phần đánh giá. Nếu chỉ dùng <div>, người dùng sẽ phải tiếp cận nội dung theo cách tuyến tính, gây khó khăn và giảm trải nghiệm đáng kể. Một ví dụ cụ thể là breadcrumb: khi dùng <nav aria-label="breadcrumb"><ol>...</ol></nav>, cả máy tìm kiếm và screen reader đều hiểu đây là hệ thống điều hướng phân cấp. Nếu thay bằng <div>, bạn phải bổ sung nhiều thuộc tính ARIA phức tạp mà vẫn kém hiệu quả. Tuy nhiên, <div> vẫn hữu ích trong các trường hợp layout thuần túy, như tạo container hoặc chia grid. Vì vậy, semantic HTML không phải là dư thừa, mà là cách viết code bền vững và chuyên nghiệp hơn.
