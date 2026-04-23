@@ -50,3 +50,7 @@ Câu A5:
 Cách 2 (<figure> + <figcaption>): dùng khi ảnh có ý nghĩa nội dung + cần chú thích/giá trị bổ sung
 VD1: Ảnh sản phẩm trong trang bán hàng kèm tên + giá (như iPhone 16 Pro Max)
 VD2: Ảnh biểu đồ thống kê kèm chú thích “Doanh thu Q1/2026 tăng 20% so với Q4/2025”
+
+PHẦN B:
+Câu B1:
+- HTML thuần không thể validate "Confirm Password" vì HTML thuần chỉ kiểm tra được từng ô nhập liệu riêng lẻ một cách độc lập. Nó không có khả năng so sánh giá trị giữa hai ô input khác nhau. Vì vậy, để kiểm tra hai ô mật khẩu có khớp nhau không, bắt buộc phải dùng JavaScript (===)
