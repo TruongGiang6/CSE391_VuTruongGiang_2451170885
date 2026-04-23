@@ -35,11 +35,46 @@
             </div>
             <div>
                 <label for="password">Mật khẩu:</label>
-                <input type="password" id="password" name="password" required minlength="8"  pattern="(?=.*[A-Z])(?=.*[0-9]).+" placeholder="Nhap mat khau">
+                <input type="password" id="password" name="password" required minlength="8"  pattern="(?=.*\d)(?=.*[A-Z]).{8,}" placeholder="Nhap mat khau">
             </div>
             <div>
                 <label for="confirmPassword">Xác nhận mật khẩu:</label>
-                <input type="password" id="confirmPassword" name="confirmPassword" required minlength="6" maxlength="100" placeholder="Xac nhan mat khau">
+                <input type="password" id="confirmPassword" name="confirmPassword" required minlength="8" pattern="(?=.*\d)(?=.*[A-Z]).{8,}" placeholder="Xac nhan mat khau">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>THÔNG TIN GIAO HÀNG</legend>
+            <div>
+                <label for="city" >Thành phố:</label>
+                <select id="city" name="city">
+                    <option value="" disabled selected>Chọn thành phố</option>
+                    <option value="hanoi">Hà Nội</option>
+                    <option value="hcm">Hồ Chí Minh</option>
+                    <option value="danang">Đà Nẵng</option>
+                    <option value="thanhhoa">Thanh Hoá</option>
+                    <option value="namdinh">Nam Định</option>
+                </select>
+            </div>
+            <div>
+                <label for="district">Quận/Huyện:</label>
+                <select id="district" name="district">
+                    <option value="" disabled selected>Chọn quận/huyện</option>
+                </select>
+            </div>
+            <div>
+                <label for="address">Địa chỉ chi tiết:</label>
+                <textarea id="address" name="address" rows="3" placeholder="Nhập địa chỉ chi tiết"></textarea>
+            </div>
+            <div>
+                <label for="gioitinh">Giới tính</label>
+                <input type="radio" id="male" name="gender" value="NAM">
+                <label for="male">Nam</label>
+
+                <input type="radio" id="female" name="gender" value="NỮ">
+                <label for="female">Nữ</label>
+
+                <input type="radio" id="other" name="gender" value="KHÁC">
+                <label for="other">Khác</label>
             </div>
         </fieldset>
     </form>
