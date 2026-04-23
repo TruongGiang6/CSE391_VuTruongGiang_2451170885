@@ -26,32 +26,55 @@
                     <td>36.000.000 VND</td>
                     <th>2</th>
                     <td>72.000.000 VND</td>
-            </tr>
-            <tr>
+                </tr>
+                <tr>
                     <th>2</th>
                     <td>MacBook Air M3</td>
                     <td>36.500.000 VND</td>
                     <th>1</th>
                     <td>36.500.000 VND</td>
-            </tr>
-            <tr>
+                </tr>
+                <tr>
                     <th>3</th>
                     <td>Laptop Gaming X</td>
                     <td>18.500.000 VND</td>
                     <th>1</th>
                     <td>18.500.000 VND</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <th colspan="4">Tổng cộng</th>
-                <td>127.500.000 VND</td>
-            </tr>
-        </tfoot>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="4">Tổng cộng</th>
+                    <td>127.500.000 VND</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <section>
+        <h1>FORM THANH TOÁN</h1>
+        <form action="#" method="POST"></form>
+        <fieldset>
+            <legend>Phương thức thanh toán & Khuyến mãi</legend>
+            <div>
+                <label for="payment">Phương thức thanh toán:</label>
+                <input type="radio" id="COD" name="payment" value="COD" required>
+                <label for="COD">COD (Thanh toán khi nhận hàng)</label>
+
+                <input type="radio" id="Chuyển khoản" name="payment" value="Chuyển khoản">
+                <label for="Chuyển khoản">Chuyển khoản</label>
+
+                <input type="radio" id="Ví điện tử" name="payment" value="Ví điện tử">
+                <label for="Ví điện tử">Ví điện tử (MOMO)</label>
+            </div>
+
+            <div>
+                <label for="voucher">Mã khuyến mãi:</label>
+                <input type="text" id="voucher" name="voucher" pattern="^SALE[0-9]{4}$" placeholder="Nhập mã SALExxxx" title="Mã khuyến mãi phải bắt đầu bằng 'SALE' và theo sau là 4 chữ số">
+            </div>
 
             
-
-        </table>
+        </fieldset>
     </section>
     
 </body>
