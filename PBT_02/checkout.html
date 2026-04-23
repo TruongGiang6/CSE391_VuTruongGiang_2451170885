@@ -77,11 +77,31 @@
                 <label for="note">Ghi chú</label>
                 <textarea id="note" name="note" rows="3" cols="50"></textarea>
             </div>
-
-
         </fieldset>
     </section>
     
+    <section>
+        <h1>THÔNG TIN GIAO HÀNG</h1>
+        <form action="#" method="POST"></form>
+        <fieldset>
+            <legend>Thông tin người nhận</legend>
+            <div>
+                <label for="deDate">Ngày giao hàng mong muốn:</label>
+                <input type="date" id="deDate" name="deDate" min="2026-04-24" required>      
+            </div>
+
+        
+            <label for="deTime">Thời gian giao hàng mong muốn:</label>
+            <select name="deTime" id="deTime" required>
+                <option value="">Chọn thời gian</option>
+                <option value="morning">8h- 12h</option>
+                <option value="afternoon">13h - 16h</option>
+                <option value="evening">17h - 20h</option>
+            </select>
+        </fieldset>
+
+        
+    </section>
 </body>
 
 
