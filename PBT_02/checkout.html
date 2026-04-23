@@ -119,6 +119,22 @@
                 </div>
 
             </fieldset>
+
+            <section aria-label="Tổng kết đơn hàng">
+                <h3>Tổng kết</h3>
+                
+                <p>Số tiền phải thanh toán: <output for="cod transfer ewallet voucher" name="final_total">26.490.000đ</output></p>
+                
+                <p>
+                    <label for="points-progress">Tiến trình hạng thành viên Vàng (Còn 200 điểm nữa):</label>
+                    <progress id="points-progress" value="800" max="1000">80%</progress>
+                </p>
+
+                <p>
+                    <label for="wallet-meter">Điểm tích lũy sử dụng cho đơn này:</label>
+                    <meter id="wallet-meter" value="5000" min="0" max="10000" low="2000" high="8000" optimum="5000">5000 điểm</meter>
+                </p>
+            </section>
             
             <div>
                 <button type="submit" aria-label="Xác nhận đặt hàng">Đặt hàng</button>
