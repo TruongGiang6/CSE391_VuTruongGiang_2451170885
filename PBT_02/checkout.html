@@ -6,102 +6,115 @@
     <title>CHECK OUT</title>
 </head>
 <body>
+    <main>
+        <section>
+            <h1>GIỎ HÀNG</h1>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Sản phẩm</th>
+                        <th>Đơn giá</th>
+                        <th>Số lượng</th>
+                        <th>Tổng</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>1</th>
+                        <td>iPhone 17 Pro Max</td>
+                        <td>36.000.000 VND</td>
+                        <th>2</th>
+                        <td>72.000.000 VND</td>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <td>MacBook Air M3</td>
+                        <td>36.500.000 VND</td>
+                        <th>1</th>
+                        <td>36.500.000 VND</td>
+                    </tr>
+                    <tr>    
+                        <th>3</th>
+                        <td>Laptop Gaming X</td>
+                        <td>18.500.000 VND</td>
+                        <th>1</th>
+                        <td>18.500.000 VND</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="4">Tổng cộng</th>
+                        <td>127.500.000 VND</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section>
+            <h1>FORM THANH TOÁN</h1>
+            <form action="#" method="POST"></form>
+            <fieldset>
+                <legend>Phương thức thanh toán & Khuyến mãi</legend>
+                <div>
+                    <label for="payment">Phương thức thanh toán:</label>
+                    <input type="radio" id="COD" name="payment" value="COD" required>
+                    <label for="COD">COD (Thanh toán khi nhận hàng)</label>
+
+                    <input type="radio" id="Chuyển khoản" name="payment" value="Chuyển khoản">
+                    <label for="Chuyển khoản">Chuyển khoản</label>
+
+                    <input type="radio" id="Ví điện tử" name="payment" value="Ví điện tử">
+                    <label for="Ví điện tử">Ví điện tử (MOMO)</label>
+                </div>
+
+                <div>
+                    <label for="voucher">Mã khuyến mãi:</label>
+                    <input type="text" id="voucher" name="voucher" pattern="^SALE[0-9]{4}$" placeholder="Nhập mã SALExxxx" title="Mã khuyến mãi phải bắt đầu bằng 'SALE' và theo sau là 4 chữ số">
+                </div>
+
+                <div>
+                    <label for="note">Ghi chú</label>
+                    <textarea id="note" name="note" rows="3" cols="50"></textarea>
+                </div>
+            </fieldset>
+        </section>
     
-    <section>
-        <h1>GIỎ HÀNG</h1>
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>STT</th>
-                    <th>Sản phẩm</th>
-                    <th>Đơn giá</th>
-                    <th>Số lượng</th>
-                    <th>Tổng</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th>1</th>
-                    <td>iPhone 17 Pro Max</td>
-                    <td>36.000.000 VND</td>
-                    <th>2</th>
-                    <td>72.000.000 VND</td>
-                </tr>
-                <tr>
-                    <th>2</th>
-                    <td>MacBook Air M3</td>
-                    <td>36.500.000 VND</td>
-                    <th>1</th>
-                    <td>36.500.000 VND</td>
-                </tr>
-                <tr>
-                    <th>3</th>
-                    <td>Laptop Gaming X</td>
-                    <td>18.500.000 VND</td>
-                    <th>1</th>
-                    <td>18.500.000 VND</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <th colspan="4">Tổng cộng</th>
-                    <td>127.500.000 VND</td>
-                </tr>
-            </tfoot>
-        </table>
-    </section>
+        <section>
+            <h1>THÔNG TIN GIAO HÀNG</h1>
+            <form action="#" method="POST"></form>
+            <fieldset>
+                <legend>Thông tin người nhận</legend>
+                <div>
+                    <label for="deDate">Ngày giao hàng mong muốn:</label>
+                    <input type="date" id="deDate" name="deDate" min="2026-04-24" required>      
+                </div>
 
-    <section>
-        <h1>FORM THANH TOÁN</h1>
-        <form action="#" method="POST"></form>
-        <fieldset>
-            <legend>Phương thức thanh toán & Khuyến mãi</legend>
-            <div>
-                <label for="payment">Phương thức thanh toán:</label>
-                <input type="radio" id="COD" name="payment" value="COD" required>
-                <label for="COD">COD (Thanh toán khi nhận hàng)</label>
+                <div>
+                    <label for="deTime">Thời gian giao hàng mong muốn:</label>
+                    <select name="deTime" id="deTime" required>
+                        <option value="">Chọn thời gian</option>
+                        <option value="morning">8h- 12h</option>
+                        <option value="afternoon">13h - 16h</option>
+                        <option value="evening">17h - 20h</option>
+                    </select>
+                </div>
 
-                <input type="radio" id="Chuyển khoản" name="payment" value="Chuyển khoản">
-                <label for="Chuyển khoản">Chuyển khoản</label>
+                <div>
+                    <label for="deSpeed">Thời gian giao hàng</label>
+                    <input type="range" id="deSpeed" name="deSpeed" min="1" max="7" step="1" value="3">
+                </div>
 
-                <input type="radio" id="Ví điện tử" name="payment" value="Ví điện tử">
-                <label for="Ví điện tử">Ví điện tử (MOMO)</label>
-            </div>
-
-            <div>
-                <label for="voucher">Mã khuyến mãi:</label>
-                <input type="text" id="voucher" name="voucher" pattern="^SALE[0-9]{4}$" placeholder="Nhập mã SALExxxx" title="Mã khuyến mãi phải bắt đầu bằng 'SALE' và theo sau là 4 chữ số">
-            </div>
-
-            <div>
-                <label for="note">Ghi chú</label>
-                <textarea id="note" name="note" rows="3" cols="50"></textarea>
-            </div>
-        </fieldset>
-    </section>
-    
-    <section>
-        <h1>THÔNG TIN GIAO HÀNG</h1>
-        <form action="#" method="POST"></form>
-        <fieldset>
-            <legend>Thông tin người nhận</legend>
-            <div>
-                <label for="deDate">Ngày giao hàng mong muốn:</label>
-                <input type="date" id="deDate" name="deDate" min="2026-04-24" required>      
-            </div>
-
+            </fieldset>
+        <div>
+            <button type="submit" aria-label="Xác nhận đặt hàng">Đặt hàng</button>
+        </div>
         
-            <label for="deTime">Thời gian giao hàng mong muốn:</label>
-            <select name="deTime" id="deTime" required>
-                <option value="">Chọn thời gian</option>
-                <option value="morning">8h- 12h</option>
-                <option value="afternoon">13h - 16h</option>
-                <option value="evening">17h - 20h</option>
-            </select>
-        </fieldset>
+        </section>
 
-        
-    </section>
+
+
+    </main>
 </body>
 
 
