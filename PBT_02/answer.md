@@ -54,3 +54,34 @@ VD2: Ảnh biểu đồ thống kê kèm chú thích “Doanh thu Q1/2026 tăng 
 PHẦN B:
 Câu B1:
 - HTML thuần không thể validate "Confirm Password" vì HTML thuần chỉ kiểm tra được từng ô nhập liệu riêng lẻ một cách độc lập. Nó không có khả năng so sánh giá trị giữa hai ô input khác nhau. Vì vậy, để kiểm tra hai ô mật khẩu có khớp nhau không, bắt buộc phải dùng JavaScript (===)
+
+PHẦN C:
+Câu C1:
+- Lỗi 1: Dòng 1 — Thẻ <form> thiếu action và method, vi phạm best practice.
+-> Sửa: <form action="#" method="POST">
+- Lỗi 2: Dòng 2 — Input "Tên" không có <label for="...">, vi phạm accessibility
+-> Sửa: <label for="name">Tên:</label> <input type="text" id="name" name="name" required>
+- Lỗi 3: Dòng 4 — Input "Email" lạm dụng placeholder thay cho <label>, vi phạm accessibility (Screen reader có thể bỏ qua). Thiếu id và name.
+-> Sửa: <label for="email">Email:</label> <input type="email" id="email" name="email" placeholder="Email của bạn">
+- Lỗi 4: Dòng 6 — Input "Mật khẩu" thiếu thuộc tính name. Khi submit form, dữ liệu ở ô này sẽ không được gửi về server.
+-> Sửa: <input type="password" id="pass" name="password" placeholder="Mật khẩu">
+- Lỗi 5: Dòng 7 — Hai ô mật khẩu có cùng placeholder nhưng không có nhãn để phân biệt đâu là ô nhập mới, đâu là ô xác nhận lại.
+-> Sửa: <label for="re-pass">Nhập lại mật khẩu:</label> <input type="password" id="re-pass" name="re_password" placeholder="Nhập lại mật khẩu">
+- Lỗi 6: Dòng 9 — Input "Phone" dùng type="text". Điều này không kích hoạt bàn phím số trên điện thoại và thiếu tính ngữ nghĩa.
+-> Sửa: <label for="phone">Phone:</label> <input type="tel" id="phone" name="phone" value="0901234567">
+- Lỗi 7: òng 11 — Thẻ <select> thiếu thuộc tính name và không có nhãn dán mô tả, khiến user dùng Screen Reader không biết danh sách này chọn cái gì.
+-> Sửa: <label for="city">Thành phố:</label> <select id="city" name="city">...</select>
+- Lỗi 8: Dòng 16 — Thẻ <label> chứa văn bản nhưng thiếu thẻ <input type="checkbox"> đi kèm. User nhìn thấy văn bản nhưng không có chỗ để tích "Đồng ý".
+-> Sửa: <label><input type="checkbox" name="agreement" required> Tôi đồng ý điều khoản</label>
+
+Câu C2:
+1.  CCCD/CMND (đúng 12 chữ số): pattern="[0-9]{12}"
+    STK (10-15 số): pattern="[0-9]{10,15}"
+2. HTML5 Validation không đủ an toàn cho ngân hàng vì HTML5 chạy ở Frontend (trên máy user), dễ dàng bị chỉnh sửa bằng phím F12
+3. 3 loại Validation mà HTML5 KHÔNG THỂ làm được (Phải dùng JS/Backend):
+- So sánh chéo
+- Kiểm tra dữ liệu hệ thống
+- Logic phức tạp
+4. 2 rủi ro bảo mật nếu chỉ validate trên Frontend mà không validate Backend:
+- Bị tấn công phá hoại: Hacker dùng lệnh bypass gửi mã độc (SQL Injection/XSS) phá sập Database
+- User cố tình gửi sai dữ liệu (tuổi < 18, tiền âm...) để trục lợi từ ngân hàng
