@@ -18,6 +18,7 @@ Câu A2:
 - TH3: Không submit đc vì value="15" lớn hơn giới hạn tối đa max="10"
 - TH4: Không submit đc vì pattern="[0-9]{10}" bắt buộc nhập đúng 10 chữ số, nhưng user nhập sai định dạng
 - TH5: Không submit đc vì minlength="8" bắt buộc tối thiểu 8 ký tự, nhưng user mới nhập 3
+-> đúng với dự đoán
 
 Câu A3:
 1. <label for>: Nối text với ô input. Giúp máy đọc màn hình (Screen Reader) đọc to tên ô cho người khiếm thị biết để nhập.
