@@ -81,3 +81,10 @@ Câu A3:
 .box-b { margin-top: 40px; }
 → Khoảng cách giữa box-a và box-b = 40px
 → Giải thích tại sao KHÔNG PHẢI 65px? vì CSS có cơ chế margin collapse, trình duyệt sẽ không cộng 2 giá trị mà sẽ lấy giá trị lớn hơn
+
+Câu A4:
+1. Tính specificity score(a, b, c):
+- rule A: (0, 0, 1)
+- rule B: (0, 1, 0)
+- rule C: (1, 0, 0)
+- rule D: (0, 1, 1)
