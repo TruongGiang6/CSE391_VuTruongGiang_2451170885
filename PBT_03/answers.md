@@ -88,3 +88,6 @@ Câu A4:
 - rule B: (0, 1, 0)
 - rule C: (1, 0, 0)
 - rule D: (0, 1, 1)
+2. Element sẽ có màu đỏ vì rule C là rule duy nhất chứa ID selector nên sẽ có độ ưu tiên cao nhất trong 4 rule
+3. Nếu thêm <p class="price" id="main-price" style="color: orange;">, element sẽ có màu cam vì inline CSS có độ ưu tiên cao nhất, mạnh hơn tất cả các selector thường
+4. Nếu Rule A thêm !important, element sẽ có màu đen vì từ khóa !important có quyền lực tuyệt đối, nó vô hiệu hóa mọi quy tắc tính điểm specificity và ghi đè cả inline CSS
