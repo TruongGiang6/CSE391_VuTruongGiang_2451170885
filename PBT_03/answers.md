@@ -113,3 +113,16 @@ Câu B2:
 
 - Với border-box: width đã bao gồm content + padding + border
 -> Tổng chiều rộng vẫn là 300px
+
+Câu B3:
+1. Danh sách các rule:
+- p -> (0,0,1)
+- .text -> (0,1,0)
+- .highlight -> (0,1,0)
+- p[class] -> (0,1,1)
+- body p -> (0,0,2)
+- .text.highlight -> (0,2,0)
+- #demo -> (1,0,0)
+- #demo.text -> (1,1,0)
+- #demo.text.highlight -> (1,2,0)
+- .force (!important) -> override tất cả
