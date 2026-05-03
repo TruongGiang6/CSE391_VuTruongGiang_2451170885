@@ -100,6 +100,5 @@ Câu B1:
 3. Descendant selector: nav a
 4. Pseudo-class selector: a:hover, tr:nth-child(even)
 , tr:hover
-
 5. Universal selector: *
 
