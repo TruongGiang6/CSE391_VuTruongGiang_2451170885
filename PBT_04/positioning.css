@@ -53,6 +53,7 @@ body {
     border-radius: 8px;
     top: 80px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    height: fit-content;
 }
 
 .sidebar ul {
