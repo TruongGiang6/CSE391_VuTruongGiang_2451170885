@@ -56,3 +56,25 @@ Câu A2:
 |                                                       |
 |  [ Item 7 ]  |              |             |           |
 +-------------------------------------------------------+
+
+PHẦN C:
+Câu C1:
+- TH1: Navigation bar ngang (logo + menu + buttons)
+-> Dùng Flexbox
+-> Giải thích: Navbar là layout 1 chiều hàng ngang. Flexbox rất phù hợp để căn trái/phải, căn giữa và tạo khoảng cách giữa các phần tử
+
+- TH2: Lưới ảnh Instagram (3 cột đều nhau, số ảnh không biết trước)
+-> Dùng Grid
+-> Giải thích: Đây là layout 2 chiều (hàng + cột). Grid giúp tạo các cột bằng nhau rất dễ bằng repeat(3, 1fr) và tự xuống hàng khi có thêm ảnh
+
+- TH3: Layout blog: main content + sidebar
+-> Dùng Grid (hoặc kết hợp Grid + Flexbox)
+-> Giải thích: Layout có nhiều cột rõ ràng nên Grid phù hợp để chia vùng content và sidebar. Bên trong từng phần có thể dùng Flexbox để căn chỉnh nội dung nhỏ hơn
+
+- TH4: Footer với 4 cột thông tin (Về chúng tôi, Liên kết, Hỗ trợ, Liên hệ)
+-> Dùng Grid
+-> Giải thích: Footer gồm nhiều cột đều nhau → Grid giúp chia cột nhanh, gọn và responsive dễ hơn
+
+- TH5: Card sản phẩm (ảnh trên, text giữa, nút dưới — nút luôn dính đáy)
+-> Dùng Flexbox
+-> Giải thích: Card là layout theo chiều dọc. Dùng display: flex; flex-direction: column; giúp đẩy nút xuống đáy bằng margin-top: auto
