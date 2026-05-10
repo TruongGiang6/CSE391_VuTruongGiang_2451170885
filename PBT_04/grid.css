@@ -51,6 +51,25 @@ body {
     align-items: center;
 }
 
-.hero-content {
-    grid-column: span 2;
+.sidebar {
+    height: fit-content;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.filter-group {
+    margin-bottom: 20px;
+}
+
+.filter-group h4 {
+    margin-bottom: 8px;
+    color: #475569;
+}
+
+.filter-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
 }
