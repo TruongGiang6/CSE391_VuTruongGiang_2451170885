@@ -32,3 +32,25 @@ body {
 .main-content { grid-area: main; }
 .ads { grid-area: ads; }
 .footer { grid-area: footer; }
+
+.header, .footer, .hero {
+    background-color: #1e293b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.hero {
+    background-color: #3b82f6;
+    color: white;
+    border-radius: 8px;
+    padding: 30px;
+    
+    gap: 20px;
+    align-items: center;
+}
+
+.hero-content {
+    grid-column: span 2;
+}
