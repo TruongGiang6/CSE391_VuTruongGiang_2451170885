@@ -17,3 +17,18 @@ Câu A1:
 
 ** "Nearest positioned ancestor" là gì? 
 - Là thẻ cha hoặc tổ tiên gần nhất có thuộc tính position khác static
+  
+Câu A2:
+- TH1: bố cục gồm 1 hàng ngang, 4 cột chia đều nhau
+  [ Item 1 ] [ Item 2 ] [ Item 3 ] [ Item 4 ]
+
+- TH2: 
+  [      Item 1      ] [      Item 2      ]
+  [      Item 3      ] [      Item 4      ]
+  [      Item 5      ] [      Item 6      ]
+  
+- TH3: 
+
+- TH4: 
+
+- TH5:
