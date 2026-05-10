@@ -1,5 +1,6 @@
 PHẦN A:
 Câu A1:
+
 | Position | Vẫn chiếm chỗ trong flow? | Tham chiếu vị trí | Cuộn theo trang? | Use case |
 |---|---|---|---|---|
 | `static` | Có | Theo flow bình thường của document | Có | Theo flow bình thường của document |
@@ -8,4 +9,11 @@ Câu A1:
 | `fixed` | Không | Viewport (màn hình trình duyệt) | Không (cố định) | Navbar cố định, nút chat, back-to-topHeader/overlay cố định trên viewport |
 | `sticky` | Có | Nearest scrolling ancestor | Phụ thuộc vào container | Header dính, menu dính khi scroll |
 
+** Khi nào absolute tham chiếu body? 
+- Khi nó không có bất kỳ thẻ cha/tổ tiên nào được set position khác static
 
+** Khi nào tham chiếu parent? 
+- Khi thẻ parent đó được set position khác static
+
+** "Nearest positioned ancestor" là gì? 
+- Là thẻ cha hoặc tổ tiên gần nhất có thuộc tính position khác static
