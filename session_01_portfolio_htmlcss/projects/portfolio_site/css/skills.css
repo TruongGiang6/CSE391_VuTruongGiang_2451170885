@@ -1,21 +1,66 @@
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
 .skills-section {
     padding: 100px 20px;
-    background-color: #c6c1c1;
     text-align: center;
-    padding: 100px 20px;
+    background-color: rgb(191, 196, 201);
 }
 
 .skills-section h2 {
+    color: #1a2a44;
     font-size: 2.75rem;
-    margin-top: 0px;
+    margin-bottom: 30px;
 }
 
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.skill-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.skill-percentage {
+    color: #6c63ff;
+    font-weight: 500;
+}
+
+.skill-name {
+    font-weight: bold;
+    color: #333;
+}
 
 .skill-bar {
-    display: block;
-    margin: 20px auto;
-    width: 80%;
-    background: #1b5fb7;
-    border-radius: 10px;
+    background-color: #e9ecef;
+    height: 20px;
+    border-radius: 12px;
     overflow: hidden;
+    position: relative;
+}
+
+.skill-progress {
+    background-color: #6c63ff; /* Màu tím như trong hình */
+    height: 100%;
+    border-radius: 10px;
+    transition: width 1s ease-in-out;
 }
