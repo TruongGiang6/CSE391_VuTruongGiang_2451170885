@@ -82,4 +82,29 @@ CÂU C1:
 3. Ẩn/Hiện: Banner quảng cáo lớn cố định 2 bên biến mất trên Mobile. Các menu danh mục chi tiết bên trái cũng bị ẩn
 4. Font size: Tiêu đề sản phẩm trên Mobile thường nhỏ hơn và bị cắt bớt để vừa diện tích
 
+CÂU C2:
+** Wireframe:
+- Mobile: Layout 1 cột. Header trung tâm. Hero image thu nhỏ. Grid món ăn 1 cột. Form đặt bàn dãn 100%. Map đặt dưới cùng.
+- Tablet: Layout 1 cột nhưng Grid món ăn 2 cột. Map và Form có thể chia thành 2 cột 50/50.
+- Desktop: Layout đa cột. Hero image full-width. Grid món ăn 3 cột. Form đặt bàn và Map nằm cạnh nhau (Grid 2 cột).
+
+**CSS Skeleton (Mobile-First):**
+```css
+** Mobile
+.header, .hero, .grid, .form-map, .footer { width: 100%; }
+.grid { display: grid; grid-template-columns: 1fr; }
+
+** Tablet
+@media (min-width: 768px) {
+  .grid { grid-template-columns: 1fr 1fr; }
+  .form-map { display: flex; }
+  .form, .map { flex: 50%; }
+}
+
+** Desktop
+@media (min-width: 1024px) {
+  .grid { grid-template-columns: repeat(3, 1fr); }
+}
+```
+
 
