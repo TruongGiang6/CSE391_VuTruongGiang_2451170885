@@ -34,6 +34,7 @@ CÂU A1:
 - Tại sao Mobile-First được khuyên dùng? Vì tải ít css hơn cho thiết bị di động, dễ quản lý logic kết thừa từ màn hình nhỏ lên màn hình lớn
 
 CÂU A2:
+
 | Kích thước (pixel) | Thiết bị đại diện | Ví dụ lưới sản phẩm (cột) |
 |-------------------|-------------------|---------------------------|
 | < 576px           | Điện thoại dọc    | 1 cột                     |
@@ -42,3 +43,13 @@ CÂU A2:
 | ≥ 992px           | Laptop nhỏ        | 4 cột                     |
 | ≥ 1200px          | Desktop           | 4 cột                     |
 | ≥ 1400px          | Màn hình lớn      | 4 hoặc 6 cột              |
+
+CÂU A3:
+
+| Chiều rộng màn hình | .container width |
+|--------------------|------------------|
+| 375px (iPhone SE)  | 100%             |
+| 600px              | 540px            |
+| 800px              | 720px            |
+| 1000px             | 960px            |
+| 1400px             | 1140px           |
