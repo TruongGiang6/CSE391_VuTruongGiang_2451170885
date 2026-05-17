@@ -9,6 +9,7 @@ body {
     background-color: #f4f4f4;
     color: #333;
     font-size: 14px;
+    line-height: 1.6;
 }
 
 .header {
@@ -23,19 +24,11 @@ body {
     z-index: 1000;
 }
 
-.logo {
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-
 .nav {
     display: none;
-    gap: 1rem;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
     padding: 1rem;
 }
 
@@ -62,4 +55,70 @@ body {
     max-width: 100%;
     height: auto;
     border-radius: 4px;
+}
+
+.buy-btn {
+    background: #28a745;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* TABLET BREAKPOINT (768px - 1023px) */
+@media (min-width: 768px) {
+    body { font-size: 16px; }
+
+    .nav { display: block; }
+    .nav ul { display: flex; list-style: none; }
+    .nav ul li { margin-left: 1rem; }
+    .menu { display: none; }
+
+    .sidebar {
+        display: block;
+        background: #f4f4f4;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .sidebar ul { display: flex; list-style: none; gap: 1rem; }
+
+    .product-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/*  DESKTOP BREAKPOINT (>= 1024px) */
+@media (min-width: 1024px) {
+    .container {
+        display: grid;
+        grid-template-columns: 200px 1fr 150px;
+        gap: 20px;
+    }
+
+
+    .sidebar {
+        margin-bottom: 0;
+    }
+    .sidebar ul { flex-direction: column; }
+
+    .product-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .ads-bar {
+        display: block;
+        background: #eee;
+        padding: 1rem;
+    }
 }
