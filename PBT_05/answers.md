@@ -84,11 +84,11 @@ CÂU C1:
 
 CÂU C2:
 ** Wireframe:
-- Mobile: Layout 1 cột. Header trung tâm. Hero image thu nhỏ. Grid món ăn 1 cột. Form đặt bàn dãn 100%. Map đặt dưới cùng.
-- Tablet: Layout 1 cột nhưng Grid món ăn 2 cột. Map và Form có thể chia thành 2 cột 50/50.
-- Desktop: Layout đa cột. Hero image full-width. Grid món ăn 3 cột. Form đặt bàn và Map nằm cạnh nhau (Grid 2 cột).
+- Mobile: Layout 1 cột. Header trung tâm. Hero image thu nhỏ. Grid món ăn 1 cột. Form đặt bàn dãn 100%. Map đặt dưới cùng
+- Tablet: Layout 1 cột nhưng Grid món ăn 2 cột. Map và Form có thể chia thành 2 cột 50/50
+- Desktop: Layout đa cột. Hero image full-width. Grid món ăn 3 cột. Form đặt bàn và Map nằm cạnh nhau (Grid 2 cột)
 
-**CSS Skeleton (Mobile-First):**
+** CSS Skeleton (Mobile-First):
 ```css
 ** Mobile
 .header, .hero, .grid, .form-map, .footer { width: 100%; }
