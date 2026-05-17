@@ -34,3 +34,11 @@ CÂU A1:
 - Tại sao Mobile-First được khuyên dùng? Vì tải ít css hơn cho thiết bị di động, dễ quản lý logic kết thừa từ màn hình nhỏ lên màn hình lớn
 
 CÂU A2:
+| Kích thước (pixel) | Thiết bị đại diện | Ví dụ lưới sản phẩm (cột) |
+|-------------------|-------------------|---------------------------|
+| < 576px           | Điện thoại dọc    | 1 cột                     |
+| ≥ 576px           | Điện thoại ngang  | 2 cột                     |
+| ≥ 768px           | Máy tính bảng     | 2 hoặc 3 cột              |
+| ≥ 992px           | Laptop nhỏ        | 4 cột                     |
+| ≥ 1200px          | Desktop           | 4 cột                     |
+| ≥ 1400px          | Màn hình lớn      | 4 hoặc 6 cột              |
