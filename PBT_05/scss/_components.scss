@@ -1,14 +1,41 @@
-$primary-color: #e67e22;
-$secondary-color: #333;
-$white: #fff;
-$gray-light: #f4f4f4;
-$gray-border: #ddd;
+@import 'variables';
+@import 'mixins';
 
-$font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.product-card {
+    border: 1px solid $gray-border;
+    padding: $spacing-md;
+    text-align: center;
+    @include card-shadow;
 
-$breakpoint-tablet: 768px;
-$breakpoint-desktop: 1024px;
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 4px;
+    }
 
-$spacing-sm: 8px;
-$spacing-md: 16px;
-$spacing-lg: 32px;
+    h4 {
+        margin: $spacing-sm 0;
+        color: $secondary-color;
+    }
+
+    .buy-btn {
+        background: $primary-color;
+        color: $white;
+        border: none;
+        padding: $spacing-sm $spacing-md;
+        cursor: pointer;
+        border-radius: 4px;
+        
+        &:hover {
+            background: darken($primary-color, 10%);
+        }
+    }
+}
+
+.header {
+    background: $secondary-color;
+    color: $white;
+    padding: $spacing-md;
+    @include flex-center;
+    justify-content: space-between;
+}
