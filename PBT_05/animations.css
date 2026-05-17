@@ -56,3 +56,23 @@
 .card:hover .img-container img {
     transform: scale(1.1);
 }
+
+.btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+.card-body {
+    padding: 15px;
+    text-align: center;
+}
