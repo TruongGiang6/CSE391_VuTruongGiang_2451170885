@@ -53,3 +53,24 @@ CÂU A3:
 | 800px              | 720px            |
 | 1000px             | 960px            |
 | 1400px             | 1140px           |
+
+CÂU A4:
+1. Variables ($primary-color): Lưu trữ giá trị để tái sử dụng
+- VD: `$primary: #ff0000; .btn { color: $primary; }`
+2. Nesting (viết CSS lồng nhau): Viết CSS lồng nhau theo cấu trúc HTML
+- VD: `nav { ul { list-style: none; } }`
+3. Mixins (@mixin, @include): Nhóm code CSS để dùng lại kèm tham số
+- VD: `@mixin flex { display: flex; } .box { @include flex; }`
+4. @extend / Inheritance: Kế thừa các thuộc tính từ một selector khác
+- VD: `.message { border: 1px solid; } .success { @extend .message; color: green; }`
+
+**Tại sao trình duyệt không đọc được?: Vì trình duyệt chỉ hiểu CSS chuẩn. SCSS là ngôn ngữ tiền xử lý có cú pháp mở rộng
+**Cần làm bước gì? Cần biên dịch (compile) bằng công cụ như SASS Compiler để chuyển thành file `.css`
+
+**Lệnh compile SCSS:**
+```bash
+sass scss/style.scss scss/style.css
+```
+(Hoặc dùng chế độ --watch để tự động cập nhật: `sass --watch scss/style.scss:scss/style.css`)
+
+### PHẦN C:
