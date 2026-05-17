@@ -1,0 +1,53 @@
+@import 'variables';
+@import 'mixins';
+@import 'components';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $font-primary;
+}
+
+.container {
+    padding: $spacing-md;
+}
+
+.sidebar, .ads-bar {
+    display: none;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $spacing-md;
+}
+
+@include respond-to('tablet') {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .sidebar {
+        display: block;
+        background: $gray-light;
+        margin-bottom: $spacing-md;
+    }
+}
+
+@include respond-to('desktop') {
+    .container {
+        display: grid;
+        grid-template-columns: 200px 1fr 150px;
+        gap: $spacing-lg;
+    }
+    .product-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .ads-bar {
+        display: block;
+        background: $gray-light;
+    }
+}
