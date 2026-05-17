@@ -27,3 +27,18 @@
 .fade-in {
     animation: fadeIn 1s ease-out forwards;
 }
+
+.card {
+    width: 300px;
+    border: 1px solid #ddd;
+    margin: 50px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+    background: white;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
