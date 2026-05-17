@@ -74,3 +74,12 @@ sass scss/style.scss scss/style.css
 (Hoặc dùng chế độ --watch để tự động cập nhật: `sass --watch scss/style.scss:scss/style.css`)
 
 ### PHẦN C:
+
+CÂU C1:
+** Phân tích Layout:
+1. Navigation: Trên Desktop là thanh tìm kiếm dài và các danh mục rõ ràng. Trên Mobile chuyền thành Icon Hamburger bên trái và thanh tìm kiếm thu gọn
+2. Lưới content: Desktop hiển thị 5-6 sản phẩm. Tablet 3-4 sản phẩm. Mobile chỉ 2 sản phẩm
+3. Ẩn/Hiện: Banner quảng cáo lớn cố định 2 bên biến mất trên Mobile. Các menu danh mục chi tiết bên trái cũng bị ẩn
+4. Font size: Tiêu đề sản phẩm trên Mobile thường nhỏ hơn và bị cắt bớt để vừa diện tích
+
+
