@@ -11,3 +11,6 @@ CÂU A1:
    - Ngoài block: 1
    (`let` có phạm vi block scope)
 
+
+
+
